@@ -5,8 +5,6 @@ Created on Mon Jul 25 14:04:07 2016
 @author: YI
 """
 
-def loadDataSet():
-    return [[1,3,4], [2,3,5], [1,2,3,5], [2,5]]
  
    
 def createC1(dataset):
@@ -91,13 +89,3 @@ def rules(freqset, iterm, supportData, ruleList, minConf):
             rules(freqset, nList, supportData, ruleList, minConf)
     
     
-apriori(dataset, 3)
-    
-aprioriGen(retList, 2)
-    
-            
-    
-dataset=loadDataSet()
-c1 = createC1(dataset)
-retList, s = filterD(dataset,c1)
-nlist, n = filterD(dataset, retList)
